@@ -1,0 +1,80 @@
+body {
+    background: linear-gradient(to right, #000, #333);
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  header, nav, main, footer {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    border: 2px solid #00ff00;
+    background: linear-gradient(to bottom, #333, #000);
+    box-shadow: 0 4px 8px rgba(0, 255, 0, 0.3);
+  }
+  
+  nav ul {
+    list-style: none;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #00ff00;
+  }
+  
+  main section {
+    margin-bottom: 20px;
+  }
+
+
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .square-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px;  /* Increase the width */
+    height: 100%;  /* Make it fill the height of the section */
+    margin-left: 20px;
+  }
+  
+  .square {
+    width: 5px;  /* Make squares smaller */
+    height: 5px;
+    transition: background 0.5s;
+    margin: 1px;
+  }
+
+  .content {
+    flex: 1;  /* Take up available space */
+  }
+  
+  /* PROJECT */
+
+.project-category {
+    margin-bottom: 20px;
+  }
+  
+  .project-category h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .project-category a {
+    color: #00ff00;  /* Or any color that fits your theme */
+  }
+  
+  #contact a {
+    color: #00ff00;  /* Or any color that fits your theme */
+  }
+  
+  
