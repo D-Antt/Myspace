@@ -3,7 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <title>Portfolio</title>
-        <link id="theme-stylesheet" rel="stylesheet" href="styles.css">
+        <link id="theme-stylesheet" rel="stylesheet" href="spaceship.css">
+
         <script src="script.js" defer></script>
       </head>      
 <body>
@@ -15,7 +16,7 @@
     <div>
         <button onclick="changeTheme('spaceship')">Spaceship</button>
         <button onclick="changeTheme('aol')">90's AOL</button>
-        <button onclick="changeTheme('crayon')">Crayon Kid</button>
+        <button onclick="changeTheme('crayonkid')">Crayon Kid</button>
     </div>
     <ul>
       <li><a href="#home">Home</a></li>
@@ -31,7 +32,7 @@
     <div class="content">
       <h2>About Me</h2>
     <p>
-      Hi there! I'm a 43-year-old kid at heart who loves video games, movies, and recently got into anime shows like My Hero Academia and One Piece. But don't let that fool you—I bring over 30 years of focus and determination from my previous career as a martial arts instructor to every job I have.
+      Hi there! I'm a 43-year-old kid at heart who loves video games, movies, and being a father of two I've just recently begun watching anime like My Hero Academia and One Piece. But don't let that fool you—I bring over 30 years of focus and determination from my previous career as a martial arts school owner/instructor to every job I have.
     </p>
     <p>
       My journey into coding began in 2022 when the global pandemic forced me to pivot careers. I dived into bootcamps, classes, and projects, and I've been hooked ever since. I'm particularly proud of the progress I've made in just a year, mastering HTML and CSS and getting better at JavaScript and React every day.
@@ -54,13 +55,14 @@
           <h2>Skills</h2>
           <ul>
             <li>HTML, CSS, JavaScript, React</li>
-            <li>Basic Python and Terminal Usage</li>
+            <li>Basic Python and Bash(Terminal Usage)</li>
             <li>Git and GitHub</li>
             <li>Responsive Design</li>
             <li>Figma to Code Conversion</li>
             <li>API Integration</li>
             <li>Collaboration Tools: Slack, Zoom, Discord</li>
-            <li>Soft Skills: Problem-Solving, Adaptability, Teamwork</li>  <!-- Add more soft skills here -->
+            <li>Soft Skills: Problem-Solving, Adaptability, Creativity, Flexibility and Work ethic
+            </li>  <!-- Add more soft skills here -->
           </ul>
         </div>
         <div class="square-container"></div>
@@ -71,7 +73,7 @@
           <h2>Projects</h2>
           <div class="project-category">
             <h3>Coding Projects</h3>
-            <p>Check out my <a href="https://github.com/D-Antt" target="_blank">GitHub</a> for some of the projects I've worked on.</p>
+            <p>Check out my <a href="https://github.com/D-Antt" target="_blank">GitHub</a> for some of the projects I've worked on.  I'll be adding functional versions of some of them to the site soon.</p>
           </div>
           <div class="project-category">
             <h3>Digital Art</h3>
@@ -100,6 +102,8 @@
                 <p>This is Day One of my quest to land a job in the tech industry, college degree not included...</p>
                 <a href="https://medium.com/@daniel.anttila0817/building-my-portfolio-site-the-journey-so-far-and-whats-next-f90419d8f560" target="_blank">Read More</a>
               </div>
+              <div id="latestBlogPost"></div>
+
               <!-- Add more blog snippets here -->
             <div class="square-container"></div>
           </section>
@@ -123,5 +127,11 @@
     <footer>
       <p>Copyright 2023</p>
     </footer>
+    <script>
+        window.onbeforeunload = function () {
+          window.scrollTo(0, 0);
+        }
+      </script>
+      
   </body>
   </html>

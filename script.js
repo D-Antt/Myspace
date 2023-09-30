@@ -39,4 +39,26 @@ function changeTheme(theme) {
       });
     });
   });
+
+  document.addEventListener('DOMContentLoaded', () => {
+    fetch('https://medium.com/feed/@yourusername')
+      .then(response => response.text())
+      .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
+      .then(data => {
+        const latestPost = data.querySelectorAll("item")[0];
+        const title = latestPost.querySelector("title").textContent;
+        const link = latestPost.querySelector("link").textContent;
+        const description = latestPost.querySelector("description").textContent;
+        
+        const blogHTML = `
+          <h3><a href="${link}" target="_blank">${title}</a></h3>
+          <p>${description}</p>
+          <a href="${link}" target="_blank">Read More</a>
+        `;
+        
+        document.getElementById('latestBlogPost').innerHTML = blogHTML;
+      });
+  });
+   
+
   

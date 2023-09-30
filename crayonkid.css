@@ -1,0 +1,22 @@
+body {
+    background-image: url('paper_texture.jpg'); /* Replace with paper texture image */
+    font-family: 'Patrick Hand', cursive; /* Google Font */
+  }
+  
+  header, nav, main, footer {
+    border: 5px dashed red; /* Crayon-like border */
+    margin: 20px;
+    padding: 20px;
+  }
+  
+  nav ul li a, .content h2, .content p {
+    color: blue; /* Primary color */
+  }
+  
+  nav ul li a:hover, .content h2:hover, .content p:hover {
+    color: green; /* Hover effect */
+    text-decoration: underline;
+  }
+  
+  /* Additional hover effects, crayon borders, etc. can go here */
+  
