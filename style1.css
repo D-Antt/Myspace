@@ -28,6 +28,12 @@ body {
     text-align: center;
     cursor: pointer;
     transition: 0.3s;
+    .project-card img {
+      max-width: 40%;
+      height: auto;
+      margin-bottom: 16px;
+    }
+    
   }
   .project-card:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
