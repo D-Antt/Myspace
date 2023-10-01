@@ -77,4 +77,36 @@ section {
     color: #00ff00;  /* Or any color that fits your theme */
   }
   
+  .project-card {
+    background-image: url('src/danttila_rick_and_morty_style_background_18cd378a-2bc1-4bd7-850b-dd89fdd59ca2.png');
+    background-size: cover;
+    background-position: center;
+    max-width: 300px;  /* Limit the width */
+    width: 100%;  /* Full width up to max-width */
+    padding-bottom: 30%;  /* 5x7 aspect ratio */
+    position: relative;  /* Relative positioning */
+    cursor: pointer;  /* Make it clickable */
+    margin: auto;  /* Center the card */
+    height: auto;
+  }
+  
+  
+  .info-card {
+    background: rgba(255, 255, 255, 0.8);  /* Semi-transparent background */
+    backdrop-filter: blur(10px);  /* Glassmorphism effect */
+    position: absolute;  /* Absolute positioning */
+    top: 50%;  /* Center vertically */
+    left: 50%;  /* Center horizontally */
+    transform: translate(-50%, -50%);  /* Centering adjustment */
+    padding: 16px;  /* Inner padding */
+    text-align: center;  /* Center text */
+    width: 50%;  /* Set width to 50% of parent .project-card */
+    border-radius: 8px;  /* Rounded corners */
+    color: black;
+  }
+  
+  
+  .project-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
   

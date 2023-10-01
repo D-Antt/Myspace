@@ -22,19 +22,32 @@ body {
     color: blue;
   }
   .project-card {
-    border: 1px solid #ccc;
-    padding: 16px;
-    margin: 16px;
-    text-align: center;
-    cursor: pointer;
-    transition: 0.3s;
-    .project-card img {
-      max-width: 40%;
-      height: auto;
-      margin-bottom: 16px;
-    }
-    
+    background-image: url('src/danttila_rick_and_morty_style_background_18cd378a-2bc1-4bd7-850b-dd89fdd59ca2.png');
+    background-size: cover;
+    background-position: center;
+    max-width: 300px;  /* Limit the width */
+    width: 100%;  /* Full width up to max-width */
+    padding-bottom: 140%;  /* 5x7 aspect ratio */
+    position: relative;  /* Relative positioning */
+    cursor: pointer;  /* Make it clickable */
+    margin: auto;  /* Center the card */
   }
+  
+  .info-card {
+    background: rgba(255, 255, 255, 0.8);  /* Semi-transparent background */
+    backdrop-filter: blur(10px);  /* Glassmorphism effect */
+    position: absolute;  /* Absolute positioning */
+    top: 50%;  /* Center vertically */
+    left: 50%;  /* Center horizontally */
+    transform: translate(-50%, -50%);  /* Centering adjustment */
+    padding: 16px;  /* Inner padding */
+    text-align: center;  /* Center text */
+    width: 50%;  /* Set width to 50% of parent .project-card */
+    padding-bottom: 70%;  /* 5x7 aspect ratio for smaller card */
+    border-radius: 8px;  /* Rounded corners */
+  }
+  
+  
   .project-card:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
